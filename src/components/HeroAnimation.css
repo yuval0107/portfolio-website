@@ -1,0 +1,393 @@
+.hero-animation {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Import devicon font */
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css');
+
+/* Tech Elements */
+.tech-elements {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tech-element {
+  position: absolute;
+  font-size: 2rem;
+  color: var(--primary-color);
+  opacity: 0.2;
+  animation: floatElement 6s ease-in-out infinite;
+}
+
+.code-bracket {
+  top: 20%;
+  right: 15%;
+  animation-delay: 0s;
+}
+
+.curly-brace {
+  top: 40%;
+  right: 25%;
+  animation-delay: 1s;
+}
+
+.parenthesis {
+  top: 60%;
+  right: 35%;
+  animation-delay: 2s;
+}
+
+.semicolon {
+  top: 30%;
+  right: 45%;
+  animation-delay: 3s;
+}
+
+.arrow {
+  top: 70%;
+  right: 20%;
+  animation-delay: 4s;
+}
+
+/* Animated Circles */
+.animated-circles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  opacity: 0.05;
+  animation: floatCircle 8s ease-in-out infinite;
+}
+
+.circle-1 {
+  width: 400px;
+  height: 400px;
+  top: 20%;
+  right: -100px;
+  animation-delay: 0s;
+}
+
+.circle-2 {
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  right: 10%;
+  background: var(--gradient-secondary);
+  animation-delay: 2s;
+}
+
+.circle-3 {
+  width: 200px;
+  height: 200px;
+  top: 70%;
+  right: 30%;
+  background: var(--gradient-accent);
+  animation-delay: 4s;
+}
+
+.circle-4 {
+  width: 150px;
+  height: 150px;
+  top: 30%;
+  right: 40%;
+  background: var(--gradient-primary);
+  animation-delay: 6s;
+}
+
+/* Tech Grid */
+.tech-grid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  opacity: 0.1;
+}
+
+.grid-cell {
+  background: var(--primary-color);
+  border-radius: 4px;
+  animation: pulseGrid 4s ease-in-out infinite;
+}
+
+.grid-cell:nth-child(odd) {
+  animation-delay: 2s;
+}
+
+/* Floating Icons */
+.floating-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-container {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-light);
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: floatIcon 6s ease-in-out infinite;
+}
+
+.icon-container i {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+/* Position existing icons */
+.icon-container:nth-child(1) {
+  top: 15%;
+  right: 20%;
+  animation-delay: 0s;
+}
+
+.icon-container:nth-child(2) {
+  top: 30%;
+  right: 30%;
+  animation-delay: 1s;
+}
+
+.icon-container:nth-child(3) {
+  top: 45%;
+  right: 25%;
+  animation-delay: 2s;
+}
+
+.icon-container:nth-child(4) {
+  top: 60%;
+  right: 35%;
+  animation-delay: 3s;
+}
+
+/* Position new icons */
+.icon-container:nth-child(5) {
+  top: 25%;
+  right: 40%;
+  animation-delay: 4s;
+}
+
+.icon-container:nth-child(6) {
+  top: 40%;
+  right: 15%;
+  animation-delay: 5s;
+}
+
+.icon-container:nth-child(7) {
+  top: 55%;
+  right: 45%;
+  animation-delay: 6s;
+}
+
+.icon-container:nth-child(8) {
+  top: 70%;
+  right: 25%;
+  animation-delay: 7s;
+}
+
+/* Animated Lines */
+.animated-lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.line {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: var(--gradient-primary);
+  opacity: 0.1;
+  animation: slideLine 6s linear infinite;
+}
+
+.line-1 {
+  top: 20%;
+  right: 15%;
+  animation-delay: 0s;
+}
+
+.line-2 {
+  top: 40%;
+  right: 25%;
+  animation-delay: 2s;
+}
+
+.line-3 {
+  top: 60%;
+  right: 35%;
+  animation-delay: 4s;
+}
+
+/* Glowing Orbs */
+.glowing-orbs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(20px);
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+.orb-1 {
+  width: 100px;
+  height: 100px;
+  background: var(--primary-color);
+  top: 30%;
+  right: 20%;
+  opacity: 0.1;
+  animation-delay: 0s;
+}
+
+.orb-2 {
+  width: 150px;
+  height: 150px;
+  background: var(--secondary-color);
+  top: 50%;
+  right: 30%;
+  opacity: 0.1;
+  animation-delay: 1s;
+}
+
+.orb-3 {
+  width: 80px;
+  height: 80px;
+  background: var(--accent-color);
+  top: 70%;
+  right: 25%;
+  opacity: 0.1;
+  animation-delay: 2s;
+}
+
+/* Animations */
+@keyframes floatElement {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-20px, -20px) rotate(180deg);
+  }
+}
+
+@keyframes floatCircle {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-20px, -20px) rotate(180deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+@keyframes pulseGrid {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes floatIcon {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-15px, -15px) rotate(10deg);
+  }
+}
+
+@keyframes slideLine {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-animation {
+    width: 100%;
+    opacity: 0.5;
+  }
+
+  .tech-element {
+    font-size: 1.5rem;
+  }
+
+  .circle-1 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .circle-2 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .circle-3 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle-4 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-container i {
+    font-size: 1.5rem;
+  }
+} 
