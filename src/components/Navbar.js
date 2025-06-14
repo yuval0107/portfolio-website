@@ -43,36 +43,46 @@ const Navbar = () => {
           <Link
             to="/Home"
             className={isActive('/Home') ? 'active' : ''}
+            onClick={toggleMobileMenu}
           >
             Home
           </Link>
           <Link
             to="/Education"
             className={isActive('/Education') ? 'active' : ''}
+            onClick={toggleMobileMenu}
           >
             Education
           </Link>
           <Link
             to="/Skills"
             className={isActive('/Skills') ? 'active' : ''}
+            onClick={toggleMobileMenu}
+
           >
             Skills
           </Link>
           <Link
             to="/Projects"
             className={isActive('/Projects') ? 'active' : ''}
+            onClick={toggleMobileMenu}
+
           >
             Projects
           </Link>
           <Link
             to="/Achievements"
             className={isActive('/Achievements') ? 'active' : ''}
+            onClick={toggleMobileMenu}
+
           >
             Achievements
           </Link>
           <Link
             to="/Leadership"
             className={isActive('/Leadership') ? 'active' : ''}
+            onClick={toggleMobileMenu}
+
           >
             Leadership
           </Link>
