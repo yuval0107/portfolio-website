@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
-      // Update scrolled state
       setIsScrolled(window.scrollY > 50);
     };
 
@@ -21,71 +18,29 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const isActive = (path) => {
-    if (path === '/Home') {
-      return location.pathname === '/Home';
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsMobileMenuOpen(false);
     }
-    return location.pathname.startsWith(path);
   };
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        <div className="navbar-logo">
-          <Link to="/Home">
-            <span className="logo-text">YUVAL BHAYANI</span>
-          </Link>
+        <div className="navbar-logo" onClick={() => scrollToSection('home')}>
+          <span className="logo-text">YUVAL BHAYANI</span>
         </div>
         <button className="mobile-menu-button" onClick={toggleMobileMenu} aria-label="Toggle menu">
           <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
         </button>
         <div className={`navbar-links ${isMobileMenuOpen ? 'active' : ''}`}>
-          <Link
-            to="/Home"
-            className={isActive('/Home') ? 'active' : ''}
-            onClick={toggleMobileMenu}
-          >
-            Home
-          </Link>
-          <Link
-            to="/Education"
-            className={isActive('/Education') ? 'active' : ''}
-            onClick={toggleMobileMenu}
-          >
-            Education
-          </Link>
-          <Link
-            to="/Skills"
-            className={isActive('/Skills') ? 'active' : ''}
-            onClick={toggleMobileMenu}
-
-          >
-            Skills
-          </Link>
-          <Link
-            to="/Projects"
-            className={isActive('/Projects') ? 'active' : ''}
-            onClick={toggleMobileMenu}
-
-          >
-            Projects
-          </Link>
-          <Link
-            to="/Achievements"
-            className={isActive('/Achievements') ? 'active' : ''}
-            onClick={toggleMobileMenu}
-
-          >
-            Achievements
-          </Link>
-          <Link
-            to="/Leadership"
-            className={isActive('/Leadership') ? 'active' : ''}
-            onClick={toggleMobileMenu}
-
-          >
-            Leadership
-          </Link>
+          <a href="#home" onClick={() => scrollToSection('home')}>Home</a>
+          <a href="#education" onClick={() => scrollToSection('education')}>Education</a>
+          <a href="#skills" onClick={() => scrollToSection('skills')}>Skills</a>
+          <a href="#projects" onClick={() => scrollToSection('projects')}>Projects</a>
+          <a href="#achievements" onClick={() => scrollToSection('achievements')}>Achievements</a>
         </div>
       </div>
     </nav>

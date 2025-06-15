@@ -10,9 +10,9 @@
 }
 
 .navbar.scrolled {
-  background: var(--background-card);
+  background: rgba(20, 20, 20, 0.95);
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   padding: 15px 0;
 }
 
@@ -132,7 +132,7 @@
     flex-direction: column;
     gap: 15px;
     transition: all 0.3s ease;
-    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.3);
   }
 
   .navbar-links.active {
@@ -175,4 +175,4 @@
     width: 100%;
     max-width: none;
   }
-} 
+}

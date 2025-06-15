@@ -33,7 +33,7 @@ const Education = () => {
       institution: "Nirma University",
       location: "Ahmedabad, Gujarat",
       duration: "2022 - 2026",
-      gpa: "8.2/10",
+      gpa: "8.22/10",
       highlights: [
         "Active member of the Coding Club",
         "Participated in various hackathons and coding competitions"

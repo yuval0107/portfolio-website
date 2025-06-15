@@ -5,21 +5,21 @@
   /* Bright pink */
   --accent-color: #00D9F5;
   /* Bright cyan */
-  --background-light: #FFFFFF;
-  /* White background */
-  --background-off: #F8F9FA;
-  /* Off-white background */
-  --background-card: #FFFFFF;
+  --background-light: #0A0A0A;
+  /* Dark background */
+  --background-off: #1A1A1A;
+  /* Darker background */
+  --background-card: #141414;
   /* Card background */
-  --text-primary: #2D3436;
-  /* Dark text */
-  --text-secondary: #636E72;
+  --text-primary: #FFFFFF;
+  /* Light text */
+  --text-secondary: #B0B0B0;
   /* Gray text */
   --gradient-primary: linear-gradient(135deg, #6C63FF 0%, #00D9F5 100%);
   --gradient-secondary: linear-gradient(135deg, #FF6584 0%, #FFB199 100%);
-  --shadow-color: rgba(108, 99, 255, 0.1);
-  --border-color: #E9ECEF;
-  /* Light border color */
+  --shadow-color: rgba(108, 99, 255, 0.15);
+  --border-color: #2A2A2A;
+  /* Dark border color */
 }
 
 * {
@@ -29,10 +29,33 @@
   font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
-.App {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
   background-color: var(--background-light);
-  min-height: 100vh;
   color: var(--text-primary);
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.main-content {
+  padding-top: 70px;
+}
+
+.main-content section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 /* Import Font Awesome for icons */
