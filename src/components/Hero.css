@@ -209,8 +209,9 @@
 }
 
 .role-animation {
-  height: 2rem;
+  height: 1rem;
   overflow: hidden;
+  margin-top: -0.5rem;
 }
 
 .role-item {

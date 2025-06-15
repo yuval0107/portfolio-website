@@ -60,22 +60,7 @@ const Hero = () => {
               <span>LinkedIn</span>
             </a>
           </div>
-          {/* <div className="hero-cta">
-            <a href="/resume" className="cta-button primary">
-              View Resume
-              <i className="fas fa-arrow-right"></i>
-            </a>
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=yuvalbhayani.55@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-button secondary"
-            >
-              Contact Me
-              <i className="fas fa-envelope"></i>
-            </a> */}
-          {/* </div> */}
-q          <div className="hero-stats">
+          <div className="hero-stats">
             <div className="stat-item">
               <span className="stat-number">2167</span>
               <span className="stat-label">LeetCode Rating</span>
