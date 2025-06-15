@@ -323,6 +323,35 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .education {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .education-card {
+    padding: 30px;
+  }
+
+  .degree {
+    font-size: 1.6rem;
+  }
+
+  .education-details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .coursework-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .education {
     padding: 60px 0;
@@ -330,36 +359,177 @@
 
   .section-title {
     font-size: 2rem;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .education-card {
     padding: 25px;
+    margin-bottom: 20px;
   }
 
   .education-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+
+  .degree {
+    font-size: 1.4rem;
+  }
+
+  .gpa-badge {
+    padding: 6px 12px;
+    font-size: 0.8rem;
   }
 
   .education-details {
     grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 15px;
   }
 
-  .coursework-grid {
-    grid-template-columns: 1fr;
+  .institution,
+  .location,
+  .duration {
+    font-size: 0.9rem;
   }
-}
 
-@media screen and (max-width: 992px) {
+  .major {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .major span {
+    font-size: 1rem;
+  }
+
+  .coursework-section {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .coursework-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+  }
+
   .coursework-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .course-item {
+    padding: 10px 12px;
+  }
+
+  .course-item span {
+    font-size: 0.9rem;
+  }
+
+  .highlights {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .highlight-item {
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .education {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+
+  .education-card {
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  .degree {
+    font-size: 1.3rem;
+  }
+
+  .gpa-badge {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+
+  .education-details {
+    padding: 12px;
+  }
+
+  .institution,
+  .location,
+  .duration {
+    font-size: 0.85rem;
+  }
+
+  .institution i,
+  .location i,
+  .duration i {
+    font-size: 1rem;
+  }
+
+  .major {
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+
+  .major i {
+    font-size: 1.2rem;
+  }
+
+  .major span {
+    font-size: 0.9rem;
+  }
+
+  .coursework-section {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .coursework-title {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+  }
+
   .coursework-grid {
     grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .course-item {
+    padding: 8px 10px;
+  }
+
+  .course-item span {
+    font-size: 0.85rem;
+  }
+
+  .course-item i {
+    font-size: 0.9rem;
+  }
+
+  .highlights {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .highlight-item {
+    font-size: 0.85rem;
+  }
+
+  .highlight-item i {
+    font-size: 0.9rem;
   }
 }
