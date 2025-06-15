@@ -44,7 +44,7 @@ const Hero = () => {
           </div>
           <div className="hero-description">
             <p>Computer Science Student at Nirma University</p>
-            <p>Passionate about Software Development and Problem Solving</p>
+            <p>Passionate about crafting impactful software and solving complex problems through clean code and logical thinking.</p>
           </div>
           <div className="hero-contact">
             <a href="tel:+919429579234" className="contact-item">

@@ -225,6 +225,7 @@
   height: 1rem;
   overflow: hidden;
   margin-top: -0.5rem;
+  min-width: 240px;
 }
 
 .role-item {
@@ -234,6 +235,7 @@
   color: var(--primary-color);
   font-weight: 600;
   animation: slide 6s infinite;
+  white-space: nowrap;
 }
 
 .hero-description {
@@ -424,8 +426,32 @@
 }
 
 @media screen and (max-width: 768px) {
+  .hero-greeting {
+    font-size: 1.1rem;
+  }
+
   .hero-name {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .hero-role {
+    margin-bottom: 1.5rem;
+    gap: 0.5rem;
+  }
+
+  .role-animation {
+    height: 2rem;
+    margin-top: 0;
+    min-width: 220px;
+  }
+
+  .role-item {
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
   }
 
   .hero-contact {
@@ -440,5 +466,89 @@
   .hero-stats {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .primary-button,
+  .secondary-button {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-greeting {
+    font-size: 0.9rem;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .hero-role {
+    margin-bottom: 1.2rem;
+    gap: 0.3rem;
+  }
+
+  .role-animation {
+    height: 2.2rem;
+    margin-top: 0;
+    min-width: 200px;
+  }
+
+  .role-item {
+    padding: 0 0.3rem;
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    font-size: 0.85rem;
+  }
+
+  .primary-button,
+  .secondary-button {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .hero-stats {
+    gap: 1rem;
+  }
+
+  .stat-item {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero-greeting {
+    font-size: 0.85rem;
+  }
+
+  .hero-name {
+    font-size: 1.8rem;
+  }
+
+  .hero-role {
+    margin-bottom: 1rem;
+    gap: 0.2rem;
+  }
+
+  .role-animation {
+    height: 2.4rem;
+    min-width: 180px;
+  }
+
+  .role-item {
+    font-size: 0.9rem;
+    padding: 0 0.2rem;
+  }
+
+  .hero-description {
+    font-size: 0.8rem;
+  }
+
+  .primary-button,
+  .secondary-button {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
   }
 }
