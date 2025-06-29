@@ -51,8 +51,8 @@ const Achievements = () => {
       color: '#4CAF50',
       achievements: [
         { text: 'LeetCode – Guardian Rank (Max Rating: 2167)', icon: 'fas fa-trophy' },
-        { text: 'CodeChef – 4-Star Coder (Max Rating: 1848)', icon: 'fas fa-star' },
-        { text: 'Codeforces – Specialist (Max Rating: 1596)', icon: 'fas fa-medal' }
+        { text: 'CodeChef – 4-Star Coder (Max Rating: 1851)', icon: 'fas fa-star' },
+        { text: 'Codeforces – Expert (Max Rating: 1601)', icon: 'fas fa-medal' }
       ]
     }
   ];

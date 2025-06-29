@@ -335,12 +335,31 @@
   transition: all 0.3s ease;
   padding: 0.5rem;
   border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  position: relative;
 }
 
 .stat-link:hover {
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.stat-link::after {
+  content: '↗';
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.stat-link:hover::after {
+  opacity: 1;
 }
 
 .stat-number {
@@ -353,6 +372,15 @@
 .stat-label {
   color: var(--text-secondary);
   font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.stat-username {
+  color: var(--primary-color);
+  font-size: 0.75rem;
+  font-weight: 500;
+  opacity: 0.8;
+  font-family: 'Courier New', monospace;
 }
 
 @keyframes fadeInUp {

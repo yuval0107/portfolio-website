@@ -44,9 +44,10 @@ const Skills = () => {
       skills: [
         { name: "HTML5", level: 85, icon: "devicon-html5-plain" },
         { name: "CSS3", level: 80, icon: "devicon-css3-plain" },
-        { name: "React", level: 75, icon: "devicon-react-original" },
-        { name: "Node.js", level: 70, icon: "devicon-nodejs-plain" },
-        { name: "Express.js", level: 65, icon: "devicon-express-original" }
+        { name: "React", level: 60, icon: "devicon-react-original" },
+        { name: "Tailwind CSS", level: 80, icon: "devicon-tailwindcss-plain" },
+        { name: "Node.js", level: 85, icon: "devicon-nodejs-plain" },
+        { name: "Express.js", level: 85, icon: "devicon-express-original" }
       ]
     },
     {
