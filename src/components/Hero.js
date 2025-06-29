@@ -62,16 +62,22 @@ const Hero = () => {
           </div>
           <div className="hero-stats">
             <div className="stat-item">
-              <span className="stat-number">2167</span>
-              <span className="stat-label">LeetCode Rating</span>
+              <a href="https://leetcode.com/u/yuvall_b/" target="_blank" rel="noopener noreferrer" className="stat-link">
+                <span className="stat-number">2167</span>
+                <span className="stat-label">LeetCode Rating</span>
+              </a>
             </div>
             <div className="stat-item">
-              <span className="stat-number">1848</span>
-              <span className="stat-label">CodeChef Rating</span>
+              <a href="https://www.codechef.com/users/yuvall_b" target="_blank" rel="noopener noreferrer" className="stat-link">
+                <span className="stat-number">1851</span>
+                <span className="stat-label">CodeChef Rating</span>
+              </a>
             </div>
             <div className="stat-item">
-              <span className="stat-number">1596</span>
-              <span className="stat-label">Codeforces Rating</span>
+              <a href="https://codeforces.com/profile/yuval_b" target="_blank" rel="noopener noreferrer" className="stat-link">
+                <span className="stat-number">1601</span>
+                <span className="stat-label">Codeforces Rating</span>
+              </a>
             </div>
           </div>
         </div>
