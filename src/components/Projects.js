@@ -31,19 +31,23 @@ const Projects = () => {
       title: 'Real-Time Chatting Platform',
       description: 'Engineered a secure and scalable messaging app using React.js, Node.js and MongoDB. Integrated JWT-based authentication and WebSockets for real-time communication. Optimized UX with responsive design and caching to handle 100+ concurrent users.',
       technologies: ['React.js', 'Node.js', 'MongoDB', 'WebSockets', 'JWT'],
-      icon: 'fas fa-comments'
+      icon: 'fas fa-comments',
+      demoLink: 'https://chat-app-g6ti.onrender.com/login',
+      githubLink: 'https://github.com/yuval0107/chat-app'
     },
     {
-      title: 'Full-Stack Job Portal Web App',
-      description: 'Built an interactive job portal using React.js, Spring Boot, MongoDB, and Redux. Features include job listings, application workflows, admin panel, and mobile-responsive UI with Tailwind CSS and Mantine. Designed scalable RESTful APIs to manage user and job data.',
-      technologies: ['React.js', 'Spring Boot', 'MongoDB', 'Redux', 'Tailwind CSS', 'Mantine'],
-      icon: 'fas fa-briefcase'
+      title: 'Full-stack EdTech Platform',
+      description: 'A full-stack EdTech platform (MERN stack) enabling students to explore and purchase courses, and instructors to create and manage content with payment integration, secure auth, and cloud media handling.',
+      technologies: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'Payment Integration', 'Cloud Media', 'JWT Auth'],
+      icon: 'fas fa-graduation-cap',
+      githubLink: 'https://github.com/yuval0107/Hey-Yu-Learn'
     },
     {
-      title: 'Automated Attendance Management System',
-      description: 'Developed a web dashboard using PHP and MySQL for tracking and analyzing student attendance. Integrated CSV exports, visual analytics, and secure login for ease of academic use.',
-      technologies: ['PHP', 'MySQL', 'HTML/CSS', 'JavaScript'],
-      icon: 'fas fa-clipboard-check'
+      title: 'Full-stack B2B SaaS Project Management System',
+      description: 'A full-stack B2B SaaS project management tool with multi-workspace support, task collaboration, role-based access, Google OAuth, and analytics, built using MERN stack, TypeScript, Tailwind CSS, and Mongoose transactions.',
+      technologies: ['React.js', 'Node.js', 'MongoDB', 'TypeScript', 'Tailwind CSS', 'Mongoose', 'Google OAuth'],
+      icon: 'fas fa-tasks',
+      githubLink: 'https://github.com/yuval0107/HeyYu-Management-System'
     }
   ];
 
@@ -77,6 +81,34 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
+                {(project.demoLink || project.githubLink) && (
+                  <div className="project-links">
+                    {project.demoLink && (
+                      <a
+                        href={project.demoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="demo-link"
+                        style={{ animationDelay: `${(index * 0.2) + 0.3}s` }}
+                      >
+                        <i className="fas fa-external-link-alt"></i>
+                        Live Demo
+                      </a>
+                    )}
+                    {project.githubLink && (
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="github-link"
+                        style={{ animationDelay: `${(index * 0.2) + 0.4}s` }}
+                      >
+                        <i className="fab fa-github"></i>
+                        GitHub
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           ))}

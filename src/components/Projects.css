@@ -158,6 +158,70 @@
   transform: translateY(-2px);
 }
 
+.project-links {
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.demo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gradient-primary);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.demo-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: white;
+  text-decoration: none;
+}
+
+.demo-link i {
+  font-size: 0.8rem;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--background-off);
+  color: var(--text-primary);
+  padding: 10px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.github-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: var(--text-primary);
+  text-decoration: none;
+  background: var(--gradient-secondary);
+  border-color: transparent;
+}
+
+.github-link i {
+  font-size: 0.9rem;
+}
+
 /* Decorative Elements */
 .projects-decoration {
   position: absolute;
@@ -210,6 +274,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -220,19 +285,24 @@
   0% {
     transform: translate(0, 0);
   }
+
   50% {
     transform: translate(-20px, -20px);
   }
+
   100% {
     transform: translate(0, 0);
   }
 }
 
 @keyframes pulseDots {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.1;
     transform: scale(1);
   }
+
   50% {
     opacity: 0.15;
     transform: scale(1.1);
@@ -280,4 +350,4 @@
     width: 150px;
     height: 150px;
   }
-} 
+}
