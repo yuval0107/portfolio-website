@@ -28,7 +28,7 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Real-Time Chatting Platform',
+      title: 'Hey-Yu Chat App',
       description: 'Engineered a secure and scalable messaging app using React.js, Node.js and MongoDB. Integrated JWT-based authentication and WebSockets for real-time communication. Optimized UX with responsive design and caching to handle 100+ concurrent users.',
       technologies: ['React.js', 'Node.js', 'MongoDB', 'WebSockets', 'JWT'],
       icon: 'fas fa-comments',
@@ -36,14 +36,14 @@ const Projects = () => {
       githubLink: 'https://github.com/yuval0107/chat-app'
     },
     {
-      title: 'Full-stack EdTech Platform',
+      title: 'StudyNotion',
       description: 'A full-stack EdTech platform (MERN stack) enabling students to explore and purchase courses, and instructors to create and manage content with payment integration, secure auth, and cloud media handling.',
       technologies: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'Payment Integration', 'Cloud Media', 'JWT Auth'],
       icon: 'fas fa-graduation-cap',
       githubLink: 'https://github.com/yuval0107/Hey-Yu-Learn'
     },
     {
-      title: 'Full-stack B2B SaaS Project Management System',
+      title: 'Team Sync',
       description: 'A full-stack B2B SaaS project management tool with multi-workspace support, task collaboration, role-based access, Google OAuth, and analytics, built using MERN stack, TypeScript, Tailwind CSS, and Mongoose transactions.',
       technologies: ['React.js', 'Node.js', 'MongoDB', 'TypeScript', 'Tailwind CSS', 'Mongoose', 'Google OAuth'],
       icon: 'fas fa-tasks',

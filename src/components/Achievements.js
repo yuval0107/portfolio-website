@@ -35,7 +35,14 @@ const Achievements = () => {
     },
     {
       title: 'Research Publication',
-      description: 'First-author paper on ML-based cybersecurity for autonomous vehicles published in IEEE Xplore.',
+      description: (
+        <>
+          First-author paper on ML-based cybersecurity for autonomous vehicles published in IEEE Xplore.{' '}
+          <a href="https://ieeexplore.ieee.org/abstract/document/10842784" target="_blank" rel="noopener noreferrer">
+            Read Paper
+          </a>
+        </>
+      ),
       icon: 'fas fa-microscope',
       color: '#FF6B6B'
     },
