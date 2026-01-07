@@ -28,6 +28,12 @@ const Achievements = () => {
 
   const achievements = [
     {
+      title: 'ICPC Regional Finalist 2025',
+      description: 'Selected for ICPC Asia Regionals at Chennai and Amritapuri, representing Nirma University at the prestigious international programming competition.',
+      icon: 'fas fa-code-branch',
+      color: '#9C27B0'
+    },
+    {
       title: 'Google India Student Launchpad 2025',
       description: "Selected for Google's premier upskilling program based on outstanding aptitude and DSA performance.",
       icon: 'fab fa-google',

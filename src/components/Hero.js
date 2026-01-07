@@ -45,6 +45,7 @@ const Hero = () => {
           <div className="hero-description">
             <p>Computer Science Student at Nirma University</p>
             <p>Passionate about crafting impactful software and solving complex problems through clean code and logical thinking.</p>
+            <p>🏆 ICPC Regional Finalist 2025 - Selected and represented my university at Chennai & Amritapuri Regionals</p>
           </div>
           <div className="hero-contact">
             <a href="tel:+919429579234" className="contact-item">
