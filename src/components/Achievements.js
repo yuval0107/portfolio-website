@@ -34,16 +34,16 @@ const Achievements = () => {
       color: '#9C27B0'
     },
     {
-      title: 'Google India Student Launchpad 2025',
-      description: "Selected for Google's premier upskilling program based on outstanding aptitude and DSA performance.",
-      icon: 'fab fa-google',
+      title: 'Top Launchpads and Programs',
+      description: 'Selected for Google India Student Launchpad 2025 and Amazon ML Summer School Scholar 2024 (Top 0.5% in India).',
+      icon: 'fas fa-brain',
       color: '#4285F4'
     },
     {
       title: 'Research Publication',
       description: (
         <>
-          First-author paper on ML-based cybersecurity for autonomous vehicles published in IEEE Xplore.{' '}
+          First-author paper on ML-based cybersecurity for autonomous vehicles published in IEEE Xplore.{" "}
           <a href="https://ieeexplore.ieee.org/abstract/document/10842784" target="_blank" rel="noopener noreferrer">
             Read Paper
           </a>
@@ -51,12 +51,6 @@ const Achievements = () => {
       ),
       icon: 'fas fa-microscope',
       color: '#FF6B6B'
-    },
-    {
-      title: 'Amazon ML Summer School Scholar 2024',
-      description: "Ranked among top 0.5% in India for selection into Amazon's advanced ML program with practical labs and mentorship.",
-      icon: 'fab fa-amazon',
-      color: '#FF9900'
     },
     {
       title: 'Competitive Programming',
