@@ -222,20 +222,23 @@
 }
 
 .role-animation {
-  height: 1rem;
+  --role-height: 2rem;
+  font-size: 1.5rem;
+  height: var(--role-height);
   overflow: hidden;
-  margin-top: -0.5rem;
   min-width: 240px;
 }
 
 .role-item {
   display: block;
-  height: 100%;
+  height: var(--role-height);
+  line-height: var(--role-height);
   padding: 0 1rem;
   color: var(--primary-color);
   font-weight: 600;
   animation: slide 6s infinite;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .hero-description {
@@ -485,14 +488,13 @@
   }
 
   .role-animation {
-    height: 2rem;
-    margin-top: 0;
+    --role-height: 1.75rem;
+    font-size: 1.2rem;
     min-width: 220px;
   }
 
   .role-item {
     padding: 0 0.5rem;
-    font-size: 1.2rem;
   }
 
   .hero-description {
@@ -534,14 +536,13 @@
   }
 
   .role-animation {
-    height: 2.2rem;
-    margin-top: 0;
+    --role-height: 1.5rem;
+    font-size: 1rem;
     min-width: 200px;
   }
 
   .role-item {
     padding: 0 0.3rem;
-    font-size: 1rem;
   }
 
   .hero-description {
@@ -578,12 +579,12 @@
   }
 
   .role-animation {
-    height: 2.4rem;
+    --role-height: 1.35rem;
+    font-size: 0.9rem;
     min-width: 180px;
   }
 
   .role-item {
-    font-size: 0.9rem;
     padding: 0 0.2rem;
   }
 

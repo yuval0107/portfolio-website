@@ -52,9 +52,9 @@ const Hero = () => {
               <i className="fas fa-phone"></i>
               <span>+91 9429579234</span>
             </a>
-            <a href="mailto:yuvalbhayani.55@gmail.com" className="contact-item">
+            <a href="mailto:yyuvalbhayani.55@gmail.com" className="contact-item">
               <i className="fas fa-envelope"></i>
-              <span>yuvalbhayani.55@gmail.com</span>
+              <span>yyuvalbhayani.55@gmail.com</span>
             </a>
             <a href="https://www.linkedin.com/in/yuval-bhayani-b34b05265/" target="_blank" rel="noopener noreferrer" className="contact-item">
               <i className="fab fa-linkedin"></i>
