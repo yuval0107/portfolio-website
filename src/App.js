@@ -5,6 +5,7 @@ import Education from './components/Education';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Achievements from './components/Achievements';
+import Leadership from './components/Leadership';
 import './App.css';
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
         </section>
         <section id="education">
           <Education />
+        </section>
+        <section id="experience">
+          <Leadership />
         </section>
         <section id="skills">
           <Skills />

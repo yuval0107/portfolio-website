@@ -38,6 +38,7 @@ const Navbar = () => {
         <div className={`navbar-links ${isMobileMenuOpen ? 'active' : ''}`}>
           <a href="#home" onClick={() => scrollToSection('home')}>Home</a>
           <a href="#education" onClick={() => scrollToSection('education')}>Education</a>
+          <a href="#experience" onClick={() => scrollToSection('experience')}>Experience</a>
           <a href="#skills" onClick={() => scrollToSection('skills')}>Skills</a>
           <a href="#projects" onClick={() => scrollToSection('projects')}>Projects</a>
           <a href="#achievements" onClick={() => scrollToSection('achievements')}>Achievements</a>

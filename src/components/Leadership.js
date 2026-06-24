@@ -28,15 +28,24 @@ const Leadership = () => {
 
   const leadershipRoles = [
     {
+      title: 'Mercor',
+      period: 'Jan 2026 – May 2026 · Part-time · Remote',
+      icon: 'fas fa-briefcase',
+      color: '#8B5CF6',
+      description: [
+        'Competitive Coding Expert (Jan 2026 – May 2026)',
+        'Software Engineering Expert (Apr 2026 – May 2026)',
+      ]
+    },
+    {
       title: 'Technical Director, CSI Nirma University',
       period: '2024 – Present',
       icon: 'fas fa-laptop-code',
       color: '#4CAF50',
       description: [
-        'Organized and hosted regular fortnightly coding contests to foster consistent practice and engagement.',
-        'Led and supported various technical and semi-technical events under CSI.',
-        'Contributed to planning, coordination, and execution of events.',
-        'Played a key role in community-building through workshops and peer learning initiatives.'
+        'Organized a national-level hackathon with 1200+ participants.',
+        'Led Cubix 2024 with 500+ participants.',
+        'Conducted weekly coding contests with 100+ average participation to strengthen technical engagement and competitive programming culture across campus communities.',
       ]
     },
     {
@@ -56,7 +65,7 @@ const Leadership = () => {
     <section id="leadership" className="leadership">
       <div className="leadership-container">
         <h2 className="section-title">
-          <span className="gradient-text">Leadership & Involvement</span>
+          <span className="gradient-text">Experience & Involvement</span>
         </h2>
         <div className={`leadership-grid ${isVisible ? 'visible' : ''}`}>
           {leadershipRoles.map((role, index) => (
